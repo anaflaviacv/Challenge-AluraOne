@@ -217,3 +217,92 @@ footer h6 {
     margin: 0;
 }
 
+@media screen and (max-width: 800px) and (orientation: portrait){
+    body {
+        margin: 0;
+        bottom: 0;
+    }
+
+    header div {
+        display: block;
+    
+    }
+
+    :fullscreen header div {
+        background-position: -30px 0px;
+    }
+
+    main {
+        flex-direction: column;
+        min-width: 0;
+        min-height: 0;
+        margin: 0;
+        align-items: center;
+    }
+
+    section {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .desk-entrar {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .digite, .digite::placeholder, .digite:focus {
+        height: 65%;
+        margin-top: 80px;
+    }
+
+    .desk-sair {
+        width: 90%;
+        height: 63%;
+        padding: 20px;
+    }
+
+    .txt-no {
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url("none.svg");
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    .txt-no img {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 490px) and (orientation: portrait) {
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        align-items: center;
+    }
+    .enc {
+        margin-bottom: 15px;
+    }
+    .desk-sair {
+        height: 55%;
+
+    }
+}
+
+@media screen and (max-height: 440px) {
+    .txt-no {
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url("none.svg");
+        background-size: 130%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .txt-no img {
+        display: none;
+    }
+}
+
