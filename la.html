@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter">
+    <link rel="shortcut icon" href="info.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="none.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <title>Descodificador de Texto - Alura</title>
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Alura" title="Alura-logo"> <div title="Modo de tela"></div>
+    </header>
+
+    <main>
+        <section class="desk-entrar">
+            <textarea id = "digite" class="digite" placeholder="Digite seu texto" autofocus></textarea>
+            <div class="info">
+               <img src="info.svg" alt="!"><h6>Apenas letras minúsculas e sem acento</h6> 
+            </div> 
+
+            <div class="botoes">
+                <button class="enc" onclick="btnEncriptar()">Criptografar</button>
+                
+                <button class="desc" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="desk-sair">
+            <div class="txt-sair">
+                <textarea id="mensagem"></textarea>
+            </div>
+
+            <div id="paiDoBotao">
+               
+            </div> 
+             
+            <div class="text-no">
+                <img src="none.svg" alt="Sem mensagens">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <h5>Digite o texto que voce deseja criptografar ou descriptografar</h5>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h6>Ana Flávia Covre &copy; 2023</h6>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
